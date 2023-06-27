@@ -41,11 +41,7 @@ class userController {
   }
 
   async checkAuth(req, res, next) {
-    const { id } = req.query;
-    if (!id) {
-      return next(ApiError.badRequest('Ne zadan id!'));
-    }
-    res.json({ id });
+    res.json({ message: 'ALL RIGHT!' });
   }
 }
 
