@@ -2,9 +2,11 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { authRoutes, publicRoutes } from '../routes';
 import Shop from '../pages/Shop';
+import { useSelector } from 'react-redux';
 
 const AppRouter = () => {
-  const isAuth = false;
+  const isAuth = useSelector((store) => store.authSlice.isAuth);
+  console.log(isAuth);
   return (
     <Routes>
       {isAuth &&
