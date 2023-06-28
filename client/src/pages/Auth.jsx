@@ -1,4 +1,5 @@
 import React from 'react';
+import eyepass from '../assets/images/eyepass.png';
 
 const Auth = () => {
   return (
@@ -13,19 +14,26 @@ const Auth = () => {
             <p className="text-3xl font-semibold mb-4">Qeydiyyat</p>
           </div>
           <div className="">
-            <form className="flex flex-col justify-center">
+            <form className="flex flex-col justify-center relative">
               <label className="text-sm">E-mail</label>
               <input
-                className="border-2 text-base rounded-md h-10 p-2 my-2"
+                className="border-2 text-base rounded-md h-10 p-2 my-2 outline-none"
                 type="text"
                 placeholder="E-mail"
               />
               <label className="text-sm">Password</label>
               <input
-                className="border-2 text-base rounded-md h-10 p-2 my-2"
+                className="border-2 text-base rounded-md h-10 p-2 my-2 outline-none"
                 type="password"
                 placeholder="Password"
               />
+              <div onClick={console.log(124)}>
+                <img
+                  className="w-5 h-5 absolute right-4 top-28 cursor-pointer"
+                  src={eyepass}
+                  alt=""
+                />
+              </div>
               <button className="bg-green-600 text-white h-10 my-2 rounded-md text-base">
                 Qeydiyyatdan keç
               </button>
