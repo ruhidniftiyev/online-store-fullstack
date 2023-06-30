@@ -1,5 +1,5 @@
 import React from 'react';
-import eyepass from '../assets/images/eyepass.png';
+// import eyepass from '../assets/images/eyepass.png';
 
 const Auth = () => {
   return (
@@ -27,13 +27,13 @@ const Auth = () => {
                 type="password"
                 placeholder="Password"
               />
-              <div onClick={console.log(124)}>
+              {/* <div onClick={console.log(124)}>
                 <img
                   className="w-5 h-5 absolute right-4 top-28 cursor-pointer"
                   src={eyepass}
                   alt=""
                 />
-              </div>
+              </div> */}
               <button className="bg-green-600 text-white h-10 my-2 rounded-md text-base">
                 Qeydiyyatdan keç
               </button>
