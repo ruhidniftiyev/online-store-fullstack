@@ -43,6 +43,11 @@ class userController {
   async checkAuth(req, res, next) {
     res.json({ message: 'ALL RIGHT!' });
   }
+
+  async getAll(req, res) {
+    const users = await User.findAll();
+    return res.json(users);
+  }
 }
 
 module.exports = new userController();
