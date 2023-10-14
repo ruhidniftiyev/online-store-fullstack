@@ -11,10 +11,10 @@ const AppRouter = () => {
     <Routes>
       {isAuth &&
         authRoutes.map(({ path, Component }) => (
-          <Route key={path} path={path} Component={Component} />
+          <Route key={path} path={path} Component={Component} exact />
         ))}
       {publicRoutes.map(({ path, Component }) => (
-        <Route key={path} path={path} Component={Component} />
+        <Route key={path} path={path} Component={Component} exact />
       ))}
       <Route path="*" Component={Shop} />
     </Routes>
