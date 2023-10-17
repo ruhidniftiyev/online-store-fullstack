@@ -26,6 +26,7 @@ const Auth = () => {
       },
       body: JSON.stringify(user),
     });
+    console.log(user);
   }, [user]);
 
   return (
