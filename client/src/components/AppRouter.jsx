@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux';
 
 const AppRouter = () => {
   const isAuth = useSelector((store) => store.authSlice.isAuth);
-  console.log(isAuth);
+  // console.log(isAuth);
   return (
     <Routes>
       {isAuth &&

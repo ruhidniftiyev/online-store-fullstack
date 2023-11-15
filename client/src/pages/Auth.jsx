@@ -18,6 +18,7 @@ const Auth = () => {
     setUser({ email, password });
   };
 
+
   useEffect(() => {
     fetch('http://localhost:7000/api/user/registration', {
       method: 'POST',
@@ -26,6 +27,7 @@ const Auth = () => {
       },
       body: JSON.stringify(user),
     });
+    console.log(1);
   }, [user]);
 
   return (
